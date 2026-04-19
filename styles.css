@@ -1,5 +1,4 @@
 /* variables and fallback */
-@import url(https://fonts.google.com/specimen/Roboto);
 :root{
     --main-color: red;
     --subtitle-color: rgb(250,150,0);
@@ -19,7 +18,7 @@ body {
     font-size: 16px; /*font size for body*/
 }
 body > header h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Sekuya", system-ui;
 }
 header + main h2 {
     position: relative;
@@ -74,7 +73,7 @@ audio {
     display: inline;
 }
 main {
-    img{
+    img {
         display: block;
         padding: 10px 10px 10px 30px;
     }
@@ -88,11 +87,10 @@ button:active {
     background-color: red;
 }
 #attendance ul{
-    display: flex;
+    display: flex; /*set the attendance list to flex*/
     background-color: hsla(99, 100%, 40%, 0.1);
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: right;
     justify-content: right;
     gap: 20px;
 }
@@ -102,7 +100,7 @@ button:active {
     width: 10px;
 }
 #things-left ul{
-  display: grid;
+  display: grid; /*set the things-left list to grid*/
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
   background-color: skyblue;
@@ -118,6 +116,7 @@ button:active {
   text-align: center;
 }
 
+/*change layout of the screen when the width of the screen is below certain width*/
 @media screen and (width < 1100px){
     #things-left ul{
         display: grid;
