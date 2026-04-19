@@ -1,0 +1,156 @@
+/* variables and fallback */
+@import url(https://fonts.google.com/specimen/Roboto);
+:root{
+    --main-color: red;
+    --subtitle-color: rgb(250,150,0);
+}
+html{
+    font-size:16px;
+}
+.title {
+    color: var(--main-color,red); /* set title color to red with fallback */
+    text-align: center;
+}
+.subtitle {
+    color: var(--subtitle-color); /* set subtitle color to orange using RGB values */
+}
+body {
+    background-color: color(srgb 0.9 0.9 0 / 0.1); /* set background-color*/
+    font-size: 16px; /*font size for body*/
+}
+body > header h1 {
+    font-family: 'Roboto', sans-serif;
+}
+header + main h2 {
+    position: relative;
+    margin-left: 1cm;
+}
+header ~ main h3{
+    color: rgb(230,0,230);
+}
+h2.subtitle {
+    text-decoration: underline;
+    font-size: 1.8em;
+}
+* {
+    box-sizing: border-box; /*calculate margin including the border*/
+}
+b {
+    font-size: 10mm;
+    color: #0000FF; /* set bold text color to blue using hexadecimal */
+}
+*.form-to-fill {
+    background-color: hsla(120, 100%, 50%, 0.1); /* set background color to semi-transparent green using HSLA */
+    width: 300px; /* set width of the form to 300 pixels */
+    height: 550px; /* set height of the form to 500 pixels */
+    margin: 20px 20px 20px 20px; /* set the margin for the form*/
+    border-style: solid;
+    border-color: green;
+    border-width: 3px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#check-in {
+    position: absolute; /* make the checkin form always appear on upper right*/
+    top:20px; /* margin 20px from the top */
+    right: 20px; /* margin 20px from the right*/
+}
+
+input[type="text"] {
+    border: 2px solid color-mix(in hsl, hsl(0 50 50), coral);
+}
+
+ul:has(li) {
+    font-size:1rem;
+}
+
+#new-business{
+    margin: 10px auto;
+}
+
+audio {
+    display: inline;
+}
+main {
+    img{
+        display: block;
+        padding: 10px 10px 10px 30px;
+    }
+}
+
+button:hover {
+    color: rgb(0,150,230);
+}
+
+button:active {
+    background-color: red;
+}
+#attendance ul{
+    display: flex;
+    background-color: hsla(99, 100%, 40%, 0.1);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: right;
+    justify-content: right;
+    gap: 20px;
+}
+#attendance ul li{
+    color: blue;
+    font-size: 20px;
+    width: 10px;
+}
+#things-left ul{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  background-color: skyblue;
+  gap: 20px;
+  padding: 10px;
+}
+#things-left li {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  margin: 20px;
+  text-align: center;
+}
+
+@media screen and (width < 1100px){
+    #things-left ul{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        background-color: skyblue;
+        gap: 20px;
+        padding: 10px;
+    }
+    video {
+    width: 500px;
+    }
+    #check-in {
+    position: relative; /* make the checkin form always appear on upper right*/
+    top:20px; /* margin 20px from the top */
+    right: 20px; /* margin 20px from the right*/
+    }
+}
+
+@media screen and (width < 600px) {
+    #things-left ul{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        background-color: skyblue;
+        gap: 20px;
+        padding: 10px;
+    }
+    video {
+    max-width: 300px;
+    min-width: 100px;
+    }
+}
+
+
+

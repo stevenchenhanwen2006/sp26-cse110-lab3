@@ -4,15 +4,18 @@
         <title>Meeting Plan</title>
         <link rel="icon" href="clock.jpg">
         <meta name="description" content="This is the meeting plan" />
+        <!-- add stylesheet -->
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
-            <h1>Meeting Agenda</h1>
+            <h1 class="title" id="main_title">Meeting Agenda</h1>
+            <h3>by Hanwen Chen</h3>
             <h2>April 8th, 2026</h2>
         </header>
         <main>
             <nav>
-            <h2>Page Navigation</h2>
+            <h1>Page Navigation</h1>
             <ul>
                 <li><a href="#introduction">introduction</a></li>
                 <li><a href="#check-in">check-in</a></li>
@@ -23,7 +26,7 @@
             </ul>
             </nav>
             <section id="introduction">
-                <h2>Introduction</h2>
+                <h2 class="subtitle">Introduction</h2>
                 <p><strong>Hello everyone!</strong> Our group name is 
                 <i>Be Bold Be Brave</i>, and my name is <span><b>Hanwen Chen</b>
                 </span>. <br>
@@ -34,24 +37,25 @@
                         at noon, and three legs in the evening?</summary>
                     Human
                 </details>
-                <p>This is our team mascot:</p>
-                <img src="light.jpg" alt="mascot">
-                <p>Now listen to this masterpiece:</p>
+                <p>This is our team mascot:
+                <img id="mascot" src="light.jpg" alt="mascot">
+                </p>
+                <p>Now listen to this masterpiece:
                 <audio controls src="rickroll.mp3"></audio>
+                </p>
                 <p>Now enjoy this scene</p>
                 <video controls src="videoplayback.mp4"></video>
             </section>
-            <hr>
             <section id="check-in">
-                <h2>Check-In</h2>
-                <div>
-                    <p>Fill out the form below:</p>
+                <div class="form-to-fill">
+                    <h2>Check-In</h2>
                     <form>
-                        <label>Name:</label>
-                        <input type="text"><br>
-                        <label>Birthdate:</label>
-                        <input type="date"><br>
                         <fieldset>
+                            <legend>Fill out the form below:</legend>
+                            <label>Name:</label>
+                            <input type="text"><br>
+                            <label>Birthdate:</label>
+                            <input type="date"><br>
                             <legend>Choose your favorite language</legend>
                             <input type="radio" id="html" name="fav_language" value="HTML">
                             <label for="html">HTML</label><br>
@@ -59,8 +63,6 @@
                             <label for="css">CSS</label><br>
                             <input type="radio" id="javascript" name="fav_language" value="JavaScript">
                             <label for="javascript">JavaScript</label>
-                        </fieldset>
-                        <fieldset>
                             <legend>Choose times you can arrive</legend>
                             <input type="checkbox" id="time1" name="time" value="12pm">
                             <label for="time1">12pm</label><br>
@@ -68,31 +70,28 @@
                             <label for="time2">3pm</label><br>
                             <input type="checkbox" id="time3" name="time" value="6pm">
                             <label for="time3">6pm</label><br><br>
-                        </fieldset>
-                        <fieldset>
                             <label for="positions">Choose the area you wish to work on:</label>
                             <input list="position-to-choose" id="positions" name="positions">
                             <datalist id="position-to-choose">
                                 <option value="web development"></option>
                                 <option value="maintanence"></option>
                             </datalist>
-                        </fieldset>
-                        <fieldset>
+                            <br><br>
                             <label for="choose-position">Choose a position</label>
                             <select name="positions" id="choose-position">
                                 <option value="frontend">frontend</option>
                                 <option value="backend">backend</option>
                                 <option value="fullstack">fullstack</option>
                             </select>
-                        </fieldset>
+                        <br>
                         <label for="comment">Questions, Comments, or Concerns</label><br>
                         <textarea id="comment" name="comment" rows="3"></textarea>
                         <br>
                         <button>Submit</button>
+                        </fieldset>
                     </form>
                 </div>
             </section>
-            <hr>
             <section id="agenda">
                 <h2>Agenda</h2>
                 <h3>List Your Idea Below:</h3>
@@ -106,6 +105,9 @@
                 <ul>
                     <li>Give me your github username</li>
                     <li>Finish introduction</li>
+                    <li>Create CSS file</li>
+                    <li>Enjoy tea time!</li>
+                    <li>Video Recording</li>
                 </ul>
             </section>
             <section id="new-business">
@@ -122,11 +124,15 @@
                     <li>Bob</li>
                     <li>John</li>
                     <li>William</li>
+                    <li>Joe</li>
+                    <li>Alice</li>
+                    <li>Karin</li>
+                    <li>Terry</li>
                 </ul>
             </section>
         </main>
         <footer>
-
+            <hr>
         </footer>
     </body>
 </html>
