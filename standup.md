@@ -4,7 +4,7 @@
 
 ## Team Members
 
-- Name
+- Hanwen Chen
 
 ---
 
@@ -12,7 +12,7 @@
 
 What did you work on yesterday?
 
-- 
+- Worked on adding CSS style sheet to my website
 
 ---
 
@@ -20,7 +20,7 @@ What did you work on yesterday?
 
 What will you work on today?
 
-- 
+- Finish up my CSS style sheet
 
 ---
 
@@ -28,10 +28,12 @@ What will you work on today?
 
 Any blockers?
 
-- 
+- No
 
 ---
 
 ## Notes
 
 Additional notes
+
+- I will submit everything before Tuesday
